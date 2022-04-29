@@ -46,13 +46,13 @@ if stroke == "no":
 else:
     stroke = 1
 
-general_health_markers = ["Poor", "Fair", "Excellent", "Good", "Very good"]
+general_health_markers = ["Poor", "Fair", "Good", "Very good", "Excellent"]
 general_health_markers_to_numbers = {
     "Poor": 0,
     "Fair": 0.25,
-    "Excellent": 0.5,
-    "Good": 0.75,
-    "Very good": 1
+    "Good": 0.5,
+    "Very good": 0.75,
+    "Excellent": 1
 }
 general_health = pyip.inputMenu(prompt="Your health in general is...\n", choices=general_health_markers, numbered=True)
 general_health = general_health_markers_to_numbers[general_health]

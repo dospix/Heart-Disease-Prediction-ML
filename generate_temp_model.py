@@ -30,7 +30,7 @@ def main():
     races = ["Other", "White", "American Indian/Alaskan Native", "Hispanic", "Asian", "Black"]
     races_as_numbers = [0, 0.2, 0.4, 0.6, 0.8, 1]
     df["Race"] = df["Race"].replace(races, races_as_numbers)
-    general_health_markers = ["Poor", "Fair", "Excellent", "Good", "Very good"]
+    general_health_markers = ["Poor", "Fair", "Good", "Very good", "Excellent"]
     general_health_markers_as_numbers = [0, 0.25, 0.5, 0.75, 1]
     df["GenHealth"] = df["GenHealth"].replace(general_health_markers, general_health_markers_as_numbers)
     age_categories = list(df["AgeCategory"].value_counts().index)
